@@ -11,8 +11,7 @@
 			"Provide Public IP in variable": "Öffentliche IP in Variable speichern",
 			"Debug": "Debug",
 			"Update Timer (0 = off)": "Update Häufigkeit (0 = aus)",
-			"Standard Timer": "Standard Interval",
-			
+			"Standard Timer": "Standard Interval"
 		}
 	}
 }
