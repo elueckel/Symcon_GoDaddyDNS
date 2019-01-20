@@ -22,10 +22,10 @@ if (!defined('vtBoolean')) {
 			//Properties
 			$this->RegisterPropertyInteger("SourceID", 0);
 			$this->RegisterPropertyBoolean("DNSUpdate", 0);
-			$this->RegisterPropertyString("RootDomain","lueckel.net");
-			$this->RegisterPropertyString("ARecord","home.lueckel.net");
-			$this->RegisterPropertyString("APIKey", "e42dmKMi2Wib_6fQsZ8rW4Hn4DtnXSkfBky");
-			$this->RegisterPropertyString("Secret", "6fQw1sRMxCTE8rupJ4u3xq");
+			$this->RegisterPropertyString("RootDomain","");
+			$this->RegisterPropertyString("ARecord","");
+			$this->RegisterPropertyString("APIKey", "");
+			$this->RegisterPropertyString("Secret", "");
 			$this->RegisterPropertyBoolean("PublicIPVariable",0);
 			$this->RegisterPropertyInteger("Timer", 0);
 			$this->RegisterPropertyBoolean("Debug", 0);
