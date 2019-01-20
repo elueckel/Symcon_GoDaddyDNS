@@ -26,6 +26,7 @@ if (!defined('vtBoolean')) {
 			$this->RegisterPropertyString("ARecord","");
 			$this->RegisterPropertyString("APIKey", "");
 			$this->RegisterPropertyString("Secret", "");
+			$this->RegisterPropertyString("IPInfoToken", "");
 			$this->RegisterPropertyBoolean("PublicIPVariable",0);
 			$this->RegisterPropertyInteger("Timer", 0);
 			$this->RegisterPropertyBoolean("Debug", 0);
@@ -63,7 +64,8 @@ if (!defined('vtBoolean')) {
 			$RootDomain = $this->ReadPropertyString("RootDomain");
 			$ARecord = $this->ReadPropertyString("ARecord");
 			$Key = $this->ReadPropertyString("APIKey");
-			$Secret = $this->ReadPropertyString("Secret");	
+			$Secret = $this->ReadPropertyString("Secret");
+			$IPInfoToken = $this->ReadPropertyString("IPInfoToken");
 			$DNSUpdate = $this->ReadPropertyBoolean("DNSUpdate");
 			$PublicIPVariable = $this->ReadPropertyBoolean("PublicIPVariable");
 			$Debug = $this->ReadPropertyBoolean("Debug");	
@@ -74,7 +76,7 @@ if (!defined('vtBoolean')) {
 			$ch = curl_init();
 			curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 			curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-			curl_setopt($ch, CURLOPT_URL, 'http://ipinfo.io/json');
+			curl_setopt($ch, CURLOPT_URL, 'http://ipinfo.io/json/?token='.$IPInfoToken);
 			curl_setopt($ch, CURLOPT_TIMEOUT, 5);
 			$json = curl_exec($ch);
 			curl_close($ch);
