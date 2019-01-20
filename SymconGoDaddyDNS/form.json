@@ -7,6 +7,7 @@
 		{ "type": "ValidationTextBox", "name": "ARecord", "caption": "A-Record" },
 		{ "type": "ValidationTextBox", "name": "APIKey", "caption": "APISecret" },
 		{ "type": "ValidationTextBox", "name": "Secret", "caption": "Secret" },
+	    	{ "type": "ValidationTextBox", "name": "IPInfoToken", "caption": "IPInfo Token" },
 		{ "type": "Label", "label": "System" },
 		{ "type": "CheckBox", "name": "PublicIPVariable", "caption": "Provide Public IP in variable" },
 		{ "type": "CheckBox", "name": "Debug", "caption": "Debug" },		
