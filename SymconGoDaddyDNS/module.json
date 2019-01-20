@@ -1,0 +1,14 @@
+{
+    "id": "{07df7331-9f23-49fe-b127-d925717ca621}",
+    "name": "Symcon_GoDaddyDNS",
+    "type": 3,
+    "vendor": "(Sonstige)",
+    "aliases": 
+    [
+        "Symcon_GoDaddyDNS"
+    ],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "GDDNS"
+}
