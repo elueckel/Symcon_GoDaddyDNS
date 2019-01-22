@@ -21,11 +21,13 @@ Update Record: Der A-Record der aktualisiert werden soll z.B. daheim von symcon.
 Key: Ein Key der via api.godaddy.com erstellt wird
 Secret: Ein Secret der via api.godaddy.com erstellt wird
 Update Interval: Frequenz die oft die Komponente die eigene IP von der Firewall abfragt (60 für Minütlich dürfte vermutlich reichen)
+IPInfo Token: Eigene IP wird via IPInfo abgefragt - es wird eine Token (kostenlos für 1000 Abfragen) bei IPInfo benötigt
+
 
 ### Version 1.0 20/01/2019
-- Kompenente fragt die IP des anschlusses in der oben gewählten Frequenz ab und prüft ob ein Update im DNS nötig ist
-- Komponente stellt auf Wunsch die aktuelle IP in eine Variable bereit
-- Komponente aktualisiert einen DNS Record (A) bei GoDaddy gehosteten domains
+- Kompenente fragt die IP des Anschlusses in der oben gewählten Frequenz ab und prüft ob ein Update im DNS nötig ist
+- Komponente stellt auf Wunsch die aktuelle IP in einer Variable bereit
+- Komponente aktualisiert einen DNS Record (A) bei GoDaddy gehosteten Domains
 
 
 ## Wo finde ich Informationen ob das Modul funktioniert
