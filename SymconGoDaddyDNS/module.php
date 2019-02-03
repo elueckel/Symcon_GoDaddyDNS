@@ -66,7 +66,7 @@ if (!defined('vtBoolean')) {
 			$Key = $this->ReadPropertyString("APIKey");
 			$Secret = $this->ReadPropertyString("Secret");
 			$IPInfoToken = $this->ReadPropertyString("IPInfoToken");
-			$DNSUpdate = $this->ReadPropertyString("DNSUpdate");
+			$DNSUpdate = $this->ReadPropertyBoolean("DNSUpdate");
 			$PublicIPVariable = $this->ReadPropertyBoolean("PublicIPVariable");
 			$Debug = $this->ReadPropertyBoolean("Debug");	
 			
