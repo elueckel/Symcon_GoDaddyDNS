@@ -29,6 +29,8 @@ IPInfo Token: Eigene IP wird via IPInfo abgefragt - es wird eine Token (kostenlo
 - Komponente stellt auf Wunsch die aktuelle IP in einer Variable bereit
 - Komponente aktualisiert einen DNS Record (A) bei GoDaddy gehosteten Domains
 
+### Version 1.01 03/02/2019
+- Fix beim abrufen der eigenen Adresse
 
 ## Wo finde ich Informationen ob das Modul funktioniert
 Wenn Debug eingeschaltet ist gibt die Komponente diverse Informationen im Debug Fenster aus.
