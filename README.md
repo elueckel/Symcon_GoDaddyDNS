@@ -1,10 +1,12 @@
+## English information below
+
 ## Funktionsumfang
 
 Modul aktualisiert einen DNS Record (A) bei GoDaddy um so ein DynDNS bei gehosteten Domains zu ermöglichen 
 
 ## Voraussetzungen
 
-IP-Symcon ab Version 5.x (darauf wurde entwickelt - sollte aber auch mit Version 4.x funktionieren).
+IP-Symcon ab Version 4.x
 
 ## Software-Installation
 
@@ -34,3 +36,40 @@ IPInfo Token: Eigene IP wird via IPInfo abgefragt - es wird eine Token (kostenlo
 
 ## Wo finde ich Informationen ob das Modul funktioniert
 Wenn Debug eingeschaltet ist gibt die Komponente diverse Informationen im Debug Fenster aus.
+
+
+## Features
+
+Module updates a DNS (A) record in the GoDaddy DNS service.
+
+## Voraussetzungen
+
+IP-Symcon 4.x upward
+
+## Software-Installation
+
+Via Module-Control or Module Store
+https://github.com/elueckel/Symcon_GoDaddyDNS
+
+## Setup of the instance in IP-Symcon
+At "Add Instance" select 'GoDaddy DNS'-Module at vendor 'Other'
+
+## Configuration:
+
+Domain: Root Domain which should be updated z.B. symcon.com
+Update Record: The A-Record which should be updated e.g. home von symcon.com (just select the A-Record (home) - not the FQDN)
+Key: A key created via api.godaddy.com 
+Secret: A key created via api.godaddy.com 
+Update Interval: Cadance how often the record should be updated (60 should be enough (every minute)
+IPInfo Token: Token created via IPInfo (free of charge for 1000 queries)
+
+
+### Version 1.0 20/01/2019
+- Component checks the current IP of the router and updates the DNS record
+- Component provides the IP Adress in a variable
+
+### Version 1.01 03/02/2019
+- Fix while check the own IP adress
+
+## Where can I find additional information in case an update is not performed
+If debug is enabled, messages will be added to the debug view
